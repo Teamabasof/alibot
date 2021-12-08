@@ -1,0 +1,22 @@
+{
+  "name": "Ali Bot",
+  "logo":"https://telegra.ph/file/e049ac49a08fa098ac406.jpg",
+  "description": "Ali Bot @mmagneto Kullanıcısınj Tanıtan Bir Botdur.",
+  "env": {
+    "TOKEN": {
+      "description": "BotFather'dan aldığınız Bot Tokenini girin..",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "https://my.telegram.org'dan api id alıp Yazın.",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "https://my.telegram.org'dan api Hash alıp Yazın.",
+      "value": ""
+    }
+  },
+  "buildpacks": [{
+    "url": ""
+  }]
+}
