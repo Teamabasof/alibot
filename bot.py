@@ -28,7 +28,6 @@ async def start(event):
                       [Button.url('🌟 Marvel Sohbet Grubu', 'https://t.me/sohbetgnl'),
                       Button.url('Film Kanalı', 'https://t.me/quickwaste'),
                       Button.url('Tag Botu', 'https://t.me/alitaggerbot')
-                      Button.url('Film Botu', 'https://t.me/quickwastebot')
                       Button.url('Kişisel Blog', 'https://t.me/mmagneto3')]
                     ),
                     link_preview=False
