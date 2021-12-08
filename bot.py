@@ -23,7 +23,7 @@ app = Client(
                         )
                     ]
                 ]
-@client.on(events.NewMessage(pattern="^/ali$"))
+@client.on(events.NewMessage(pattern="^/alı$"))
   await event.reply("**Ali Kimdir**, Ali Sadece Kendini Geliştirmeye Çalışan Biri Azimli Bir Şekilde İlerliyor\nDaha fazla bilgi için Aşağıdaki Butonlardan Ali'nin kanal ve grupların akatılabilir botlarını kullanabilirsin eğer gruba girersen onunla birebir sohbet edebilirsin.",
                     reply_markup=InlineKeyboardMarkup(
                 [
