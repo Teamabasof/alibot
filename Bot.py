@@ -1,23 +1,23 @@
-import os, logging, asyncio
-import io, os, sys, setuptools, tokenize
-from telethon import Button
-from telethon import TelegramClient, events
-from telethon.sessions import StringSession
-from telethon.tl.types import ChannelParticipantsAdmins
+import requests
+import json
+import pyrogram
+from pyrogram import Client
+from pyrogram import filters
+import os
 
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(name)s - [%(levelname)s] - %(message)s'
+
+#load_dotenv(".env", override=True)
+bot_token = os.environ['BOT_TOKEN']
+api_id = int(os.environ['API_ID'])
+api_hash = os.environ['API_HASH']
+
+# Telegram sunucusuna bagliyoruz
+app = Client(
+    "LambdaBot",
+    bot_token=bot_token,
+    api_id=api_id,
+    api_hash=api_hash
 )
-LOGGER = logging.getLogger(__name__)
-
-api_id = int(os.environ.get("APP_ID"))
-api_hash = os.environ.get("API_HASH")
-bot_token = os.environ.get("TOKEN")
-client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
-
-anlik_calisan = []
-
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply("**Ali'nin Botu**, Selam Ben Sana Beni Tanıtıcam!★\nBeni tanımak için **/ali**'i tıklayın.",
