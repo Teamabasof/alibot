@@ -23,7 +23,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/ali$"))
 async def start(event):
-  await event.reply("**Ali Kimdir**, Ali Sadece Kendini Geliştirmeye Çalışan Bir Coder Azimli Bir Şekilde İlerliyor\nDaha fazla bilgi için Aşağıdaki Butonlardan Ali'nin kanal ve grupların akatılabilir botlarını kullanabilirsin eğer gruba girersen onunla birebir sohbet edebilirsin.",
+  await event.reply("**Ali Kimdir**, Ali Sadece Kendini Geliştirmeye Çalışan Biri Azimli Bir Şekilde İlerliyor\nDaha fazla bilgi için Aşağıdaki Butonlardan Ali'nin kanal ve grupların akatılabilir botlarını kullanabilirsin eğer gruba girersen onunla birebir sohbet edebilirsin.",
                     buttons=(
                       [Button.url('🌟 Marvel Sohbet Grubu', 'https://t.me/sohbetgnl'),
                       Button.url('Film Kanalı', 'https://t.me/quickwaste'),
