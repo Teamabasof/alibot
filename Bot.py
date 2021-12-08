@@ -1,4 +1,5 @@
 import os, logging, asyncio
+import io, os, sys, setuptools, tokenize
 from telethon import Button
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
