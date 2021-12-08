@@ -1,16 +1,12 @@
-import requests
-import json
-import pyrogram
-from pyrogram import Client
-from pyrogram import filters
-import os
+import os, logging, asyncio
+from telethon import Button
+from telethon import TelegramClient, events
 
 
 bot_token = os.environ['BOT_TOKEN']
 api_id = int(os.environ['API_ID'])
 api_hash = os.environ['API_HASH']
 
-# Telegram sunucusuna bagliyoruz
 app = Client(
     "Alibot",
     bot_token=bot_token,
