@@ -14,15 +14,19 @@ app = Client(
     api_hash=api_hash
 )
 @client.on(events.NewMessage(pattern="^/start$"))
-  await event.reply("**Ali'nin Botu**, Selam Ben Sana Beni Tanıtıcam!★\nBeni tanımak için **/mmagneto**'i tıklayın."),
+async def help(event):
+  helptext = "**Ali'nin Botu**, Selam Ben Sana Beni Tanıtıcam!★\nBeni tanımak için **/mmagneto**'i tıklayın."
+  await event.reply("helptext,
                                                  reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Sahibim", url=f"https://t.me/mmagneto")]]),
-                             disable_web_page_preview=True
+                             disable_web_page_preview=True")
 
 @client.on(events.NewMessage(pattern="^/mmagneto$"))
-  await event.reply("**Ali Kimdir**, Ali Sadece Kendini Geliştirmeye Çalışan Biri Azimli Bir Şekilde İlerliyor\nDaha fazla bilgi için Aşağıdaki Butonlardan Ali'nin kanal ve grupların akatılabilir botlarını kullanabilirsin eğer gruba girersen onunla birebir sohbet edebilirsin."),
+async def help(event):
+  mmtext = "**Ali Kimdir**, Ali Sadece Kendini Geliştirmeye Çalışan Biri Azimli Bir Şekilde İlerliyor\nDaha fazla bilgi için Aşağıdaki Butonlardan Ali'nin kanal ve grupların akatılabilir botlarını kullanabilirsin eğer gruba girersen onunla birebir sohbet edebilirsin." 
+  await event.reply("mmtext,
                                                  reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Marvel Sohbet", url=f"https://t.me/sohbetgnl"),
                                                                  InlineKeyboardButton("Film Kanalı", url=f"https://t.me/quickwaste"),
                                                                  InlineKeyboardButton("Film Botu", url=f"https://t.me/quickwastebot"),
                                                                  InlineKeyboardButton("Tagger Bot", url=f"https://t.me/alitaggerbot"),
                                                                  InlineKeyboardButton("Kişisel Blog", url=f"https://t.me/mmagneto3")]]),
-                             disable_web_page_preview=True
+                             disable_web_page_preview=True") 
