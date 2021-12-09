@@ -5,3 +5,4 @@ git+git://github.com/pyrogram/pyrogram@master
 python-dotenv
 hachoir
 ffmpeg-python
+motor
