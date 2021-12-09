@@ -20,7 +20,7 @@ async def start(event):
                              disable_web_page_preview=True
 
 @client.on(events.NewMessage(pattern="^/mmagneto$"))
-async def mmagneto(event):
+async def help(event):
   await event.reply("**Ali Kimdir**, Ali Sadece Kendini Geliştirmeye Çalışan Biri Azimli Bir Şekilde İlerliyor\nDaha fazla bilgi için Aşağıdaki Butonlardan Ali'nin kanal ve grupların akatılabilir botlarını kullanabilirsin eğer gruba girersen onunla birebir sohbet edebilirsin.",
                                                  reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Marvel Sohbet", url=f"https://t.me/sohbetgnl"),
                                                                  InlineKeyboardButton("Film Kanalı", url=f"https://t.me/quickwaste"),
